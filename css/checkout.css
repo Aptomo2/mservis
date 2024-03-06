@@ -1,0 +1,184 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+body{
+  background: rgb(248, 35, 77);
+  padding: 0 10px;
+}
+.wrapper-nota{
+  max-width: 500px;
+  width: 100%;
+  background: #fff;
+  margin: 50px auto;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.125);
+  padding: 30px;
+}
+
+.wrapper-nota .title{
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: crimson;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.wrapper-nota .title p{
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 25px;
+  color: crimson;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.wrapper-nota .form{
+  width: 100%;
+}
+
+.wrapper-nota .form .inputfield{
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.wrapper-nota .form .inputfield label{
+   width: 200px;
+   color: #757575;
+   margin-right: 10px;
+  font-size: 14px;
+}
+
+.wrapper-nota .form .inputfield .input,
+.wrapper-nota .form .inputfield .textarea{
+  width: 100%;
+  outline: none;
+  border: 1px solid #d5dbd9;
+  font-size: 15px;
+  padding: 8px 10px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.wrapper-nota .form .inputfield .textarea{
+  width: 100%;
+  height: 125px;
+  resize: none;
+}
+
+.wrapper-nota .form .inputfield .custom_select{
+  position: relative;
+  width: 100%;
+  height: 37px;
+}
+
+.wrapper-nota .form .inputfield .custom_select:before{
+  content: "";
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  border: 8px solid;
+  border-color: #d5dbd9 transparent transparent transparent;
+  pointer-events: none;
+}
+
+.wrapper-nota .form .inputfield .custom_select select{
+  -webkit-appearance: none;
+  -moz-appearance:   none;
+  appearance:        none;
+  outline: none;
+  width: 100%;
+  height: 100%;
+  border: 0px;
+  padding: 8px 10px;
+  font-size: 15px;
+  border: 1px solid #d5dbd9;
+  border-radius: 3px;
+}
+
+
+.wrapper-nota .form .inputfield .input:focus,
+.wrapper-nota .form .inputfield .textarea:focus,
+.wrapper-nota .form .inputfield .custom_select select:focus{
+  border: 1px solid #3282b8;
+}
+
+.wrapper-nota .form .inputfield p{
+   font-size: 14px;
+   color: #757575;
+}
+.wrapper-nota .form .inputfield .check{
+  width: 15px;
+  height: 15px;
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+.wrapper-nota .form .inputfield .check input[type="checkbox"]{
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.wrapper-nota .form .inputfield .check .checkmark{
+  width: 15px;
+  height: 15px;
+  border: 2px solid #004a7c;
+  display: block;
+  position: relative;
+}
+.wrapper-nota .form .inputfield .check .checkmark:before{
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 2px;
+  width: 5px;
+  height: 2px;
+  border: 2px solid;
+  border-color: transparent transparent #fff #fff;
+  transform: rotate(-45deg);
+  display: none;
+}
+.wrapper-nota .form .inputfield .check input[type="checkbox"]:checked ~ .checkmark{
+  background: #3282b8;
+}
+
+.wrapper-nota .form .inputfield .check input[type="checkbox"]:checked ~ .checkmark:before{
+  display: block;
+}
+
+.wrapper-nota .form .inputfield .btn{
+  width: 100%;
+   padding: 8px 10px;
+  font-size: 15px; 
+  border: 0px;
+  background:  crimson;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 3px;
+  outline: none;
+}
+
+.wrapper-nota .form .inputfield .btn:hover{
+  background: crimson;
+}
+
+.wrapper-nota .form .inputfield:last-child{
+  margin-bottom: 0;
+}
+
+@media (max-width:420px) {
+  .wrapper-nota .form .inputfield{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .wrapper-nota .form .inputfield label{
+    margin-bottom: 5px;
+  }
+  .wrapper-nota .form .inputfield.terms{
+    flex-direction: row;
+  }
+}

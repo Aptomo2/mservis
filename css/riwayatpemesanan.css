@@ -1,0 +1,25 @@
+.container {
+    margin-top: 50px;
+}
+
+.h3 {
+    margin-top: 50px;
+}
+
+.table {
+    position: relative;
+    margin-top: 20px;
+
+}
+
+.th {
+    font-weight: bolder;
+}
+
+.td {
+    font-weight: 500;
+}
+
+.btn {
+    border-radius: 20px;
+}

@@ -1,0 +1,84 @@
+body{
+	margin: 0;
+	padding: 0;
+	justify-content: center;
+	background-color: crimson;
+	align-items: center;
+	font-family: sans-serif;
+}
+
+.signup{
+	margin: auto;
+    justify-content: center;
+    align-items: center;
+	background-color: rgb(201, 210, 235);
+	width: 350px;
+	text-align: center;
+	padding: 40px;
+	box-sizing: border-box;
+	border-radius: 10px;
+}
+
+.signup h2{
+	margin: 0 0 20px; 
+	width: 100%;
+	margin-bottom: 25px;
+}
+
+.signup .input-group{
+	position: relative;
+	width: 100%;
+	margin-bottom: 25px;
+}
+
+.signup .input-group input{
+	height: 50px;
+	width: 100%;
+	padding: 0 20px;
+	box-sizing: border-box;
+	font-size: 18px;
+	border: 3px solid black;
+	border-radius: 10px;
+}
+
+.signup .input-group span{
+	position: absolute;
+	top: 12px;
+	left: 20px;
+	padding: 0px;
+	text-transform: capitalize;
+	background-color: #fff;
+	
+}
+
+.signup .input-group input:focus ~ span,
+.signup .input-group input:valid ~ span{
+	top: -12px;
+	left: 20px;
+	font-size: 12px;
+	background-color: crimson;
+	padding: 2px 4px;
+	border: 1px solid #000;
+	border-radius: 5px;
+
+}
+
+.signup .input-group input[type="submit"]{
+	background-color: crimson;
+	border: none;
+	text-transform: uppercase;
+	font-weight: bold;
+	cursor: pointer;
+	width: 40%;
+	transition: 0.5s;
+}
+
+.signup .input-group input[type="submit"]:hover{
+	width: 100%;
+	background-color: rgba(83, 170, 228, 0.5);
+	color: #fff;
+}
+
+.login {
+	color: crimson;
+}
